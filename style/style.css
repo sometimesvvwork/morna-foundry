@@ -19,6 +19,9 @@ li a {
 @media screen and (max-width: 414px) {
   .container {
     padding: 20px 20px; } }
+@media (max-width: 600px) {
+  .feed {
+    grid-template-columns: repeat(1, 1fr); } }
 .feed {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
@@ -27,9 +30,6 @@ li a {
   object-fit: cover;
   width: 100%; }
 
-@media (max-width: 600px) {
-  .feed {
-    grid-template-columns: repeat(1, 1fr); } }
 footer {
   display: grid;
   text-align: center;
