@@ -23,3 +23,82 @@ a
 
 ::-webkit-scrollbar 
   display: none
+
+@media (max-width: 768px) 
+  .header-info
+    font-size: 1.5rem
+
+.pt-1
+  width: 40%
+  height: 100vh
+  float: left
+  position: relative
+
+.pt-1-content1
+  padding: 35px
+
+.pt-1-content 
+  padding: 35px
+  position: absolute
+  bottom: 0
+
+.pt-1-social
+  display: flex
+
+.pt-1-social div a 
+  background-color: black
+  padding: 10px 20px
+  color: white
+  border-radius: 90px
+  margin-right: 10px
+
+.pt-1-social div a:hover
+  background-color: white
+  color: black
+
+.pt-2
+  width: 60%
+  height: 100vh
+  float: right
+  background-color: #c1c4a5
+  overflow: scroll
+  position: relative
+
+.pt-2-counter
+  padding: 35px
+  position: fixed
+  bottom: 0
+  right: 0
+
+.pt-2-counter div a 
+  background-color: black
+  padding: 10px 20px
+  color: white
+  border-radius: 90px
+  margin-right: 10px
+
+.pt-2-counter div a:hover
+  background-color: white
+  color: black
+
+.no-support 
+  text-align: center
+  padding: 5px
+  width: 450px
+  margin-left: auto
+  margin-right: auto
+  background: #ee6620
+  color: #fff
+  font-size: 16px
+
+
+@supports(scroll-snap-type: y mandatory) 
+  .no-support 
+    display: none
+
+.element
+  display: flex
+  justify-content: center
+  align-items: center
+  scroll-snap-align: start
+  scroll-snap-stop: normal
