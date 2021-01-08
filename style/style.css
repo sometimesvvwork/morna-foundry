@@ -13,99 +13,6 @@ li a {
   color: black;
   text-decoration: none; }
 
-.container {
-  padding: 30px 70px 6% 70px; }
-
-@media screen and (max-width: 414px) {
-  .container {
-    padding: 20px 20px; } }
-.feed {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
-
-@media (max-width: 600px) {
-  .feed {
-    grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 600px) and (max-width: 1100px) {
-  .feed {
-    grid-template-columns: repeat(2, 1fr); } }
-.feed img {
-  object-fit: cover;
-  width: 100%; }
-
-footer {
-  display: grid;
-  text-align: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  position: fixed;
-  bottom: 0;
-  margin: 0;
-  padding: 15px 0;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #ff4417;
-  width: 50%; }
-
-@media (max-width: 768px) {
-  footer {
-    position: sticky;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    font-size: 1rem; } }
-@media (min-width: 768px) and (max-width: 1024px) {
-  footer {
-    position: fixed;
-    bottom: 0;
-    grid-template-columns: repeat(2, 1fr); } }
-.about-grid {
-  display: grid;
-  grid-template-columns: 70% 1fr; }
-
-.title-about-grid {
-  padding: 0 2%;
-  font-size: 8vw; }
-
-.title-about-grid p {
-  margin: 0;
-  margin-bottom: 3%; }
-
-.title-about-grid p:hover {
-  font-style: italic; }
-
-@media (max-width: 600px) {
-  .about-grid {
-    grid-template-columns: repeat(1, 1fr); } }
-@media (min-width: 600px) and (max-width: 1100px) {
-  .about-grid {
-    grid-template-columns: repeat(1, 1fr); } }
-@media (min-width: 321px) and (max-width: 600px) {
-  .title-about-grid {
-    padding: 0;
-    font-size: 2.6rem; } }
-.animate__animated div:nth-of-type(1) {
-  --animate-duration: 0.5s; }
-
-.animate__animated div:nth-of-type(2) {
-  --animate-duration: 1s; }
-
-.animate__animated div:nth-of-type(3) {
-  --animate-duration: 1.5s; }
-
-.animate__animated div:nth-of-type(4) {
-  --animate-duration: 2s; }
-
-.title-about-grid p:nth-of-type(1) {
-  --animate-duration: 1s; }
-
-.title-about-grid p:nth-of-type(2) {
-  --animate-duration: 1.5s; }
-
-.title-about-grid p:nth-of-type(3) {
-  --animate-duration: 2s; }
-
-.title-about-grid p:nth-of-type(4) {
-  --animate-duration: 2.5s; }
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -123,25 +30,62 @@ a {
 ::-webkit-scrollbar {
   display: none; }
 
-@media (max-width: 768px) {
-  .header-info {
-    font-size: 1.5rem; } }
 .pt-1 {
-  width: 40%;
-  height: 100vh;
-  float: left;
+  width: 100%;
+  display: inline-block; }
+
+.pt-2 {
   position: relative; }
+
+.pt-1-social div {
+  margin-top: 30px; }
+
+#fullpage {
+  overflow: auto;
+  white-space: nowrap; }
+
+#fullpage .secition {
+  display: inline-block; }
+
+@media screen and (min-width: 768px) {
+  .pt-1 {
+    width: 40%;
+    height: 100vh;
+    float: left;
+    position: relative; }
+
+  .pt-1-social {
+    display: flex; }
+
+  .pt-2 {
+    width: 60%;
+    height: 100vh;
+    float: right;
+    background-color: #c1c4a5;
+    overflow: scroll;
+    position: relative; }
+
+  .pt-2-counter {
+    padding: 35px 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0; }
+
+  .pt-1-content {
+    padding: 35px;
+    position: absolute;
+    bottom: 0; } }
+.pt-2-counter {
+  padding: 35px 0px;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.pt-1-content {
+  padding: 35px; }
 
 .pt-1-content1 {
   padding: 35px; }
-
-.pt-1-content {
-  padding: 35px;
-  position: absolute;
-  bottom: 0; }
-
-.pt-1-social {
-  display: flex; }
 
 .pt-1-social div a {
   background-color: black;
@@ -154,20 +98,6 @@ a {
   background-color: white;
   color: black; }
 
-.pt-2 {
-  width: 60%;
-  height: 100vh;
-  float: right;
-  background-color: #c1c4a5;
-  overflow: scroll;
-  position: relative; }
-
-.pt-2-counter {
-  padding: 35px;
-  position: fixed;
-  bottom: 0;
-  right: 0; }
-
 .pt-2-counter div a {
   background-color: black;
   padding: 10px 20px;
@@ -177,26 +107,6 @@ a {
 
 .pt-2-counter div a:hover {
   background-color: white;
-  color: black; }
-
-.no-support {
-  text-align: center;
-  padding: 5px;
-  width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #ee6620;
-  color: #fff;
-  font-size: 16px; }
-
-@supports(scroll-snap-type: y mandatory) {
-  .no-support {
-    display: none; } }
-.element {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
-  scroll-snap-stop: normal; }
+  color: blacks; }
 
 /*# sourceMappingURL=style.css.map */
