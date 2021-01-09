@@ -12,6 +12,7 @@ body
   font-size: 1.6rem
   background-color: #c1c4a5
   height: 100vh
+  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA10lEQVRIid2UQQ6CMBBFXzRwPQmoXEnEYxDXeg9dS0RcegFcq4u2hphWStsVP/lJM2nez3TawtQVAzmwB2rgKV3L2lrucVIGtMB7wDcgHQOeAzsL8K9LYGYT4AJXLobgmQdcOTHBY8R5+gbcMQw+DwBXXilofyjG1hy00BWvATuodQFdwIBOQa3urYNeuoBHwIAvqx9wDhhw0gUcAgYcdcUIaPAfcMufHzYNEKB9A32VHvDNEBzEXLYO8IKR1z7BbiYNFsdiUoT4uCrggnihnVxXwFLumbA+sVHc/44az28AAAAASUVORK5CYII=') 2 2, pointer
 
 @media (max-width: 320px)
   body
@@ -24,83 +25,13 @@ a
 ::-webkit-scrollbar
   display: none
 
-.pt-1
-  width: 100%
-  display: inline-block
+::-moz-selection 
+    background: rgba(255, 255, 255, 0.99)
+    color: #000
+    border-radius: 20px
 
-.pt-2
-  position: relative
+::selection 
+    background: rgba(255, 255, 255, 0.99)
+    color: #000
+    border-radius: 20px
 
-.pt-1-social div 
-  margin-top: 30px
-
-#fullpage
-  overflow: auto
-  white-space: nowrap
-
-#fullpage .secition
-  display: inline-block
-
-@media screen and ( min-width:768px)
-  .pt-1
-    width: 40%
-    height: 100vh
-    float: left
-    position: relative
-
-  .pt-1-social
-    display: flex
-
-  .pt-2
-    width: 60%
-    height: 100vh
-    float: right
-    background-color: #c1c4a5
-    overflow: scroll
-    position: relative
-
-  .pt-2-counter
-    padding: 35px 0px 
-    position: fixed
-    bottom: 0
-    right: 0
-
-  .pt-1-content
-    padding: 35px
-    position: absolute
-    bottom: 0
-
-
-.pt-2-counter
-  padding: 25px 0px 
-  position: absolute
-  bottom: 0
-  right: 0
-
-.pt-1-content
-  padding: 35px
-
-.pt-1-content1
-  padding: 35px
-
-.pt-1-social div a
-  background-color: black
-  padding: 10px 20px
-  color: white
-  border-radius: 90px
-  margin-right: 10px
-
-.pt-1-social div a:hover
-  background-color: white
-  color: black
-
-.pt-2-counter div a
-  background-color: black
-  padding: 10px 20px
-  color: white
-  border-radius: 90px
-  margin-right: 10px
-
-.pt-2-counter div a:hover
-  background-color: white
-  color: blacks

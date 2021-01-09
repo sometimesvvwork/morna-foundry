@@ -8,12 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
-      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
-      crossorigin="anonymous"
-    />
+
     <title>Morna Foundry</title>
   </head>
   <body>
@@ -67,40 +62,27 @@
         </div>
       </div>
     </div>
+
     <div class="pt-2">
-      <div class="pt-2-counter">
-        <div class="animate__animated animate__slideInUp">
-          <a
-            class="active"
-            href="https://www.instagram.com/morna____________foundry/"
-          >
-            1/4</a
-          >
+      <div class="swiper-pagination pt-2-counter"></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/2NUM.svg" alt="" /></div>
+          <div class="swiper-slide"><img src="images/QLET-2.svg" alt="" /></div>
+          <div class="swiper-slide"><img src="images/RLET.svg" alt="" /></div>
+          <div class="swiper-slide"><img src="images/GLET.svg" alt="" /></div>
         </div>
       </div>
-      <div id="fullpage">
-        <img src="images/2NUM.svg" alt="" />
-        <img src="images/RLET.svg" alt="" />
-        <img src="images/QLET.svg" alt="" />
-        <img src="images/GLET.svg" alt="" />
-      </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="js/localTime.js"></script>
     <script src="js/randomFooter.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
-      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      if (window.matchMedia("(min-width:768px)").matches) {
-        new fullpage("#fullpage", {
-          //options here
-          autoScrolling: true
-        });
-      }
-    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="js/swiper.js"></script>
   </body>
 </html>
