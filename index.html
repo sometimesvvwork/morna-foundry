@@ -4,64 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewdivort" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-        #menu {
-            display: inline-block;
-        }
-
-        #menu > div {
-            margin: -2px 0;
-        }
-
-        #texto-adicional {
-            display: none;
-        }
-
-        span {
-            font-family: "Arial Narrow", Arial, sans-serif;
-            font-size: 4rem;
-            color: transparent;
-            background-color: black;
-        }
-
-        a {
-            color: blue;
-        }
-
-        a:hover {
-            color: red;
-        }
-
-        span:hover {
-            color: black;
-            background-color: white;
-        }
-
-        body {
-            margin: 0;
-            background-color: #949494;
-            cursor: none !important;
-            -webkit-user-select: none;
-            /* Safari */
-            -ms-user-select: none;
-            /* IE 10 and IE 11 */
-            user-select: none;
-            /* Standard syntax */
-        }
-
-        .custom-cursor {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            pointer-events: none;
-            /* Garante que o cursor não interfira com os cliques */
-            z-index: 9999;
-            /* Coloca o cursor em cima de todos os outros elementos */
-            transition: transform 0.3s;
-            /* Adiciona uma transição suave para a escala */
-        }
-    </style>
+    <title>sometimes v+v work</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -69,7 +13,7 @@
         <div><span>sometimes vve work, sometimes vve don’t.</span></div>
         <div><span>siamo un duo di designer & kostruttori.</span></div>
         <div>
-            <span id="cu">tipografia, expografia, editorial, direção criativa e
+            <span id="cu">design gráphico, editorial, direção criativa, tipografia e
                 <a id="extend" href="#">+38</a>
             </span>
         </div>
@@ -77,9 +21,9 @@
             <span>enquiries to
                 <a href="mailto:boasorte@sometimes-vv-work.online">boasorte@sometimes-vv-work.online</a></span>
         </div>
-        <div><span><a href="#">blogspot</a></span></div>
+        <div><span><a href="#">manifesto</a></span></div>
         <div>
-            <span><a id="zp" href="instagram.com/vvvvworkvvvv">work!!</a></span>
+            <span><a href="https://www.instagram.com/vvvvworkvvvv" target="_blank">work!!</a></span>
         </div>
     </div>
 
@@ -94,80 +38,7 @@
         </svg>
 
     </div>
-
-    <script>
-        var fada = document.getElementById("extend");
-        var cuz = document.getElementById("cu");
-
-        var textoAdicional =
-            [
-                "estratégia kriativa",
-                "tipografia",
-                "design gráphico",
-                "editorial",
-                "direção criativa",
-                "design de produto digital",
-                "fotographia a.k.a photografia",
-                "curadores de musika",
-                "sinalização & wayfinding",
-                "identidade visual",
-                "bland branding",
-                "motion design",
-                "arquitetos digitæs",
-                "expografia",
-                "código",
-                "guidelines",
-                "embalagem",
-                "naming",
-                "fazedor de imagem",
-                "€ qualquer coisa se você for maluco o suficiente",
-                "tenta a sorte."
-
-            ];
-        var showtimesAsString = textoAdicional.join(', ');
-
-        function changeContent() {
-            cu.innerHTML = "<span>" + showtimesAsString + "</span>";
-        }
-
-        fada.addEventListener("click", changeContent);
-
-
-        document.getElementById("zp").addEventListener("click", function () {
-            alert("apenas sendo chatao, essa pagina nem ta pronta");
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            var cursor = document.querySelector(".custom-cursor");
-            var timeoutId;
-            var escala = 1;
-
-            function escalarCursor() {
-                escala += 60;
-                cursor.style.transform = "scale(" + escala + ")";
-            }
-
-            function resetarCursor() {
-                clearTimeout(timeoutId);
-                cursor.style.transform = "scale(1)";
-                escala = 1;
-            }
-
-            document.addEventListener("mousemove", function (e) {
-                cursor.style.left = e.clientX + "px";
-                cursor.style.top = e.clientY + "px";
-                resetarCursor();
-                clearTimeout(timeoutId); // Limpa o temporizador a cada movimento do mouse
-                timeoutId = setTimeout(escalarCursor, 3000); // Configura um novo temporizador para escalar o cursor após 3 segundos
-            });
-
-            var timeoutInicial = setTimeout(escalarCursor, 3000); // Começa a escalar o cursor após 3 segundos
-
-            document.addEventListener("mouseout", function () {
-                resetarCursor();
-            });
-        });
-    </script>
+    <script src="scripts/customCursor.js"></script>
 </body>
 
 </html>
