@@ -1,92 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4HwAA4AcAAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACAAQAAwAMAAOAHAAD4HwAA"
-      rel="icon"
-      type="image/x-icon"
-    />
-    <title>Morna Foundry</title>
-  </head>
-  <body>
-    <div class="pt-1">
-      <div class="pt-1-content1">
-        <ul>
-          <li><a style="text-align: left;">MORNA FOUNDRY</a></li>
-          <li class="final-item">
-            <a id="time-part" style="text-align: right;">11:51:52 2021</a>
-          </li>
-        </ul>
-      </div>
+    <meta name="viewdivort" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #menu {
+            display: inline-block;
+        }
 
-      <div class="pt-1-content">
-        <p>
-          <b>What about Monra?</b>
-        </p>
-        <p>
-          Morna Foundry surge como projeto tipográfico mantido por Vinícius
-          Queiróz com o objetivo de produzir e experimentar métodos do desenho
-          de tipos, sem vínculo com parâmentros estéticos e técnicos.
-        </p>
-        <p>
-          <b>So... What you planning??</b>
-        </p>
-        <p>
-          O primeiro contato com tipos me levou ao — <i>Vou fazer uma fonte.</i>
-          No meio do processo notei o quão exaustivo é, como exige refinamento
-          no traço e noção estética para terminar uma família. Quero utilizar
-          esse canal para produzir caracteres em constância sem necessariamente
-          estar ligado a formalidade de desenhar um pacote por inteiro.
-        </p>
+        #texto-adicional {
+            display: none;
+        }
 
-        <div class="pt-1-social">
-          <div class="animate__animated animate__slideInUp">
-            <a
-              class="active"
-              href="https://www.instagram.com/morna____________foundry/"
-              >IG ↬</a
-            >
-          </div>
+        span {
+            font-family: "Arial Narrow", Arial, sans-serif;
+            font-size: 4rem;
+            color: transparent;
+            background-color: black;
+        }
 
-          <div class="animate__animated animate__slideInUp">
-            <a href="https://www.instagram.com/yayf1gwfh125e/">FOUNDER</a>
-          </div>
-          <div class="animate__animated animate__slideInUp">
-            <a href="https://www.instagram.com/morna____________foundry/"
-              >@morna_____foundry</a
-            >
-          </div>
+        a {
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        span:hover {
+            color: black;
+            background-color: white;
+        }
+
+        body {
+            margin: 0;
+            background-color: #949494;
+            cursor: none !important;
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE 10 and IE 11 */
+            user-select: none;
+            /* Standard syntax */
+        }
+
+        .custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+            /* Garante que o cursor não interfira com os cliques */
+            z-index: 9999;
+            /* Coloca o cursor em cima de todos os outros elementos */
+            transition: transform 0.3s;
+            /* Adiciona uma transição suave para a escala */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <div><span>sometimes vve work, sometimes vve don’t.</span></div>
+        <div><span>siamo un duo di designer & kostruttori.</span></div>
+        <div>
+            <span id="cu">tipografia, expografia, editorial, direção criativa e
+                <a id="extend" href="#">+38</a>
+            </span>
         </div>
-      </div>
+        <div>
+            <span>enquiries to
+                <a href="mailto:boasorte@sometimes-vv-work.online">boasorte@sometimes-vv-work.online</a></span>
+        </div>
+        <div><span><a href="#">blogspot</a></span></div>
+        <div>
+            <span><a id="zp" href="instagram.com/vvvvworkvvvv">work!!</a></span>
+        </div>
     </div>
 
-    <div class="pt-2">
-      <div class="swiper-pagination pt-2-counter"></div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/2NUM.svg" alt="" /></div>
-          <div class="swiper-slide"><img src="images/QLET-2.svg" alt="" /></div>
-          <div class="swiper-slide"><img src="images/RLET.svg" alt="" /></div>
-          <div class="swiper-slide"><img src="images/GLET.svg" alt="" /></div>
-        </div>
-      </div>
+    <div class="custom-cursor">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+            <polygon fill="#FFFFFF" points="8.2,20.9 8.2,4.9 19.8,16.5 13,16.5 12.6,16.6 " />
+            <polygon fill="#FFFFFF" points="17.3,21.6 13.7,23.1 9,12 12.7,10.5 " />
+            <rect x="12.5" y="13.6" transform="matrix(0.9221 -0.3871 0.3871 0.9221 -5.7605 6.5909)" width="2"
+                height="8" />
+            <polygon points="9.2,7.3 9.2,18.5 12.2,15.6 12.6,15.5 17.4,15.5 " />
+        </svg>
+
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-    <script src="js/localTime.js"></script>
-    <script src="js/randomFooter.js"></script>
+    <script>
+        var fada = document.getElementById("extend");
+        var cuz = document.getElementById("cu");
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script src="js/swiper.js"></script>
-  </body>
+        var textoAdicional =
+            [
+                "estratégia kriativa",
+                "tipografia",
+                "design gráphico",
+                "editorial",
+                "direção criativa",
+                "design de produto digital",
+                "fotographia a.k.a photografia",
+                "curadores de musika",
+                "sinalização & wayfinding",
+                "identidade visual",
+                "bland branding",
+                "motion design",
+                "arquitetos digitæs",
+                "expografia",
+                "código",
+                "guidelines",
+                "embalagem",
+                "naming",
+                "fazedor de imagem",
+                "€ qualquer coisa se você for maluco o suficiente",
+                "tenta a sorte."
+
+            ];
+        var showtimesAsString = textoAdicional.join(', ');
+
+        function changeContent() {
+            cu.innerHTML = "<span>" + showtimesAsString + "</span>";
+        }
+
+        fada.addEventListener("click", changeContent);
+
+
+        document.getElementById("zp").addEventListener("click", function () {
+            alert("apenas sendo chatao, essa pagina nem ta pronta");
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var cursor = document.querySelector(".custom-cursor");
+            var timeoutId;
+            var escala = 1;
+
+            function escalarCursor() {
+                escala += 60;
+                cursor.style.transform = "scale(" + escala + ")";
+            }
+
+            function resetarCursor() {
+                clearTimeout(timeoutId);
+                cursor.style.transform = "scale(1)";
+                escala = 1;
+            }
+
+            document.addEventListener("mousemove", function (e) {
+                cursor.style.left = e.clientX + "px";
+                cursor.style.top = e.clientY + "px";
+                resetarCursor();
+                clearTimeout(timeoutId); // Limpa o temporizador a cada movimento do mouse
+                timeoutId = setTimeout(escalarCursor, 3000); // Configura um novo temporizador para escalar o cursor após 3 segundos
+            });
+
+            var timeoutInicial = setTimeout(escalarCursor, 3000); // Começa a escalar o cursor após 3 segundos
+
+            document.addEventListener("mouseout", function () {
+                resetarCursor();
+            });
+        });
+    </script>
+</body>
+
 </html>
