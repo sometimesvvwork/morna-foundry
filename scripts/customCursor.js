@@ -1,67 +1,30 @@
-var fada = document.getElementById("extend");
-        var cuz = document.getElementById("cu");
+document.addEventListener("DOMContentLoaded", function () {
+    var cursor = document.querySelector(".custom-cursor");
+    var timeoutId;
+    var escala = 1;
 
-        var textoAdicional =
-            [
-                
-                "design gráphico",
-                "editorial",
-                "direção criativa",
-                "tipografia",
-                "estratégia",
-                "design de produto digital",
-                "fotographia a.k.a photografia",
-                "curadores de musika estranha",
-                "sinalização & wayfinding",
-                "identidade visual",
-                "bland branding",
-                "motion design",
-                "arquitetos digitæs",
-                "expografia",
-                "código",
-                "guidelines",
-                "embalagem",
-                "naming",
-                "fazedor de imagem",
-                "e qualquer coisa se você for maluco o suficiente",
-                "tenta a sorte."
+    function escalarCursor() {
+        escala += 60;
+        cursor.style.transform = "scale(" + escala + ")";
+    }
 
-            ];
-        var showtimesAsString = textoAdicional.join(', ');
+    function resetarCursor() {
+        clearTimeout(timeoutId);
+        cursor.style.transform = "scale(1)";
+        escala = 1;
+    }
 
-        function changeContent() {
-            cu.innerHTML = "<span>" + showtimesAsString + "</span>";
-        }
+    document.addEventListener("mousemove", function (e) {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+        resetarCursor();
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(escalarCursor, 3000);
+    });
 
-        fada.addEventListener("click", changeContent);
+    var timeoutInicial = setTimeout(escalarCursor, 3000);
 
-        document.addEventListener("DOMContentLoaded", function () {
-            var cursor = document.querySelector(".custom-cursor");
-            var timeoutId;
-            var escala = 1;
-
-            function escalarCursor() {
-                escala += 60;
-                cursor.style.transform = "scale(" + escala + ")";
-            }
-
-            function resetarCursor() {
-                clearTimeout(timeoutId);
-                cursor.style.transform = "scale(1)";
-                escala = 1;
-            }
-
-            document.addEventListener("mousemove", function (e) {
-                cursor.style.left = e.clientX + "px";
-                cursor.style.top = e.clientY + "px";
-                resetarCursor();
-                clearTimeout(timeoutId);
-                timeoutId = setTimeout(escalarCursor, 3000);
-            });
-
-            var timeoutInicial = setTimeout(escalarCursor, 3000);
-
-            document.addEventListener("mouseout", function () {
-                resetarCursor();
-            });
-        });
+    document.addEventListener("mouseout", function () {
+        resetarCursor();
+    });
+});
